@@ -17,8 +17,8 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<LibraryContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("LibraryDb")));
+builder.Services.AddDbContext<BooksContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BooksDb")));
 builder.Services.AddScoped<IBookService, BookService>();
 
 //Add rate limiting

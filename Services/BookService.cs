@@ -7,8 +7,8 @@ namespace LibraryManagementApi.Repositories
 {
     public class BookService : IBookService
     {
-        private readonly LibraryContext _context;
-        public BookService(LibraryContext context)
+        private readonly BooksContext _context;
+        public BookService(BooksContext context)
         {
                 _context = context;
         }
